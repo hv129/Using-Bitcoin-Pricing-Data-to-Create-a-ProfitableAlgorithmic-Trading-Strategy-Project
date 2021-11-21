@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>Bitcoin Price Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <label for="date">Date:</label>
+
+        <input type="date" name="date" min="2015-10-31" max="2021-10-02" required>
+        <input type="search" name="n" min=1 max=15 placeholder="No. of Days" required>
+        <br>
+        <input type="submit" class="btn-info" value="Predict">
+        <input type="reset" class="btn-info" value="Reset">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+
+<body>
+    <p><b>Resultss for Prediction</b></p>
+    Next {{n}} days Prediction:
+    <div>
+        {%for i in range(0,len)%}
+
+        Day {{i+1}}: {{res[i][0]}}<br>
+        {%endfor%}
+    </div>
+
+    <div>
+        <!--RMSE Score: {{trainScore}}-->
+    </div>
+    <div>
+        <!-- <img src="data:image/png;base64, {{ plot_url }}">-->
+    </div>
+</body>
+
+</html>
