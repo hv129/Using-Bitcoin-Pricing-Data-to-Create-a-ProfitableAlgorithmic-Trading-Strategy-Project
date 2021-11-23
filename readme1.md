@@ -6,21 +6,19 @@ In this webapp a dataframe table is already displayed before any selection by th
 
 ![image1](images/Picture19.png)
 
-
-in the next part, in the sidebar of the app user can select the type of plots ie scatterplot, histogram, boxplot, lineplot so that the trands of all the attributes can be viewed by the user as per his choice of x axis and y axis in settings.
+In the next part, in the sidebar of the app user can select the type of plots ie scatterplot, histogram, boxplot, lineplot so that the trands of all the attributes can be viewed by the user as per his choice of x axis and y axis in settings.
 
 ![image2](images/Picture19.png)
 
-selection of type of plot
+Selection of type of plot
 
 ![image3](images/Picture19.png)
 
-selecting x axis and y axis
+Selecting x axis and y axis
 
 ![image4](images/Picture19.png)
 
-
-sample plot
+Sample plot
 
 ![image5](images/Picture19.png)
 
