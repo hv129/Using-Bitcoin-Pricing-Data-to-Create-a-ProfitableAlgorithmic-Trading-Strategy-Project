@@ -16,10 +16,8 @@ The raw dataset taken in model creation is from
 [Investing.com](https://in.investing.com/crypto/bitcoin/historical-data)
 
 ###
-The model deployed is **Logistic Regression with PCA**(_Team B_)
+The model deployed is **Logistic Regression with PCA** (_Team B_)
 ---
-Blueprint as per Team B is
-##pending
 
 ####
 **Dataset description-**
@@ -32,38 +30,42 @@ Attributes-
 4. High:High price of day
 5. Low:Low price of day
 6. Vol.:Volume of bitcoin traded in a day
-7. Change %:change in bitcoin price(negative orpositive)
+7. Change %:change in bitcoin price(negative or positive)
 
 All data types of the attributes are inially 'Object datatype'
 
 ###
-Steps:
-##
-step1:**Data Cleaning part**
+
+### Data Cleaning part
 
 The raw dataset Dataset had to be reversed so as to arrange the data from older to the recent.The given data was checked for null values.Data was cleaned by removing useless characters and changing Volume to absolute terms.
 Date column was splitted and Day, Month and Year columns were added.Most of the columns were of object type and therefore it had to be converted into other useful data types.
 therefore a new dataframe was created with updated data.
 
-![new dataframe](target url)
+![new dataframe](images/Picture1.png)
 
-### We have plotted a number of graphs as a part of Data Visualiztion
+### Data Visualization
 1.Histogram
-![Histogram](target url)
+
+![Histogram](images/Picture2.png)
 
 2.Heatmap
-![Heatmap](target url)
+
+![Heatmap](images/Picture3.png)
 
 conclusion: Price, Open, High and Low values possessed a strong relationship between each other(Highly correlated)
 Price, Vol., and Change % seemed to be most useful feature in training the model.
 
 3.Pairplot
-![Pairplot](target url)
+
+![Pairplot](images/Picture4.png)
 
 4.Outliers:
-Outcliers were checked for any incorrectly mapped data.
-![Outliers](target url)
-conclusion:Only the Vol. and Change % data had outliers
+
+Outliers were checked for any incorrectly mapped data.
+![Outliers](images/Picture5.png)
+
+Conclusion:Only the Vol. and Change % data had outliers
 Price, Open, Low and High data had no outliers.
 Outliers in Vol.
  *  Upper bound: 233137.5
@@ -76,56 +78,57 @@ Outliers in %change
 *   Lower bound: -8.66
 *   No. of Outliers: 20
 Since the number of Outliers are very small in the given data (24 for Volume and 20 for Change %) there was no need to deal with them separately.
+
 5. Lineplots:
 
 Date vs Price
 
-![lineplot](target url)
+![lineplot](images/Picture6.png)
 
-conclusion:
+Conclusion:
 
 •   Overall the Price trend was increasing even though there was a reasonable amount decline around May 2021
 
 Date vs Price/Open/High/Low
 
-![lineplot](target url)
+![lineplot](images/Picture7.png)
 
-conclusions:
+Conclusions:
 •   Visualisation of extremely high similarity (correlation) between Price, Open, High and Low values.
 •   Only Price, Volume and Change % data was used for further analysis because of the correlation.
 
 Date vs Vol.
 
-![lineplot](target url)
+![lineplot](images/Picture8.png)
 
-conclusions:
+Conclusions:
 Volume was more or less in the same range with some very sharp ups and downs
 
 Date vs Change%
 
-![lineplot](target url)
+![lineplot](images/Picture9.png)
 
-conclusions:
+Conclusions:
 •   The Change % trend is similar to Volume trend as it remains more or less in the same range with some very sharp ups and downs
 
 Monthly Price Trends
 
-![Monthly price trends](target url)
+![Monthly price trends](images/Picture10.png)
 
-conclusion:
+Conclusion:
 •Most of the months saw an overall rise in the Price (except for April, May, June and Sep 2021)
 
 Monthly cumulative Volume
 
-![Monthly cumulative volume](target url)
+![Monthly cumulative volume](images/Picture11.png)
 
-conclusion:
+Conclusion:
 •   Highest trading in terms of amount wass done in Jan 2021 followed by Feb 2021
 •   There had been a decent amount of trading from Nov 2020 to Jun 2021
 
 Moving average:
 
-![moving average](target url)
+![moving average](images/Picture12.png)
 
 
 
