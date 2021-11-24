@@ -130,20 +130,4 @@ Moving average:
 
 ![moving average](images/Picture12.png)
 
-
-
-
-# Model training
-
-
-
-
-
-
-
-
-
-## Conclusion and FutureWork
-Our Model has significantly performed well on train as well as test data set.Also after predictions of price ,we have crosschecked the valuess which came out to be nearly same.
-So concluding that Model is properly trained and tested.
-Further, Our next step will be to work with API , so that we can use live dates and predict values of bitcoin price for upcoming days.
+Two models and their deployment are given below:
